@@ -37,7 +37,7 @@ export async function generateChatResponse(
   try {
     const openai = getOpenAI();
     const response = await openai.chat.completions.create({
-      model: 'gpt-5-nano',
+      model: 'gpt-4o-mini',
       messages: [
         {
           role: 'system',
